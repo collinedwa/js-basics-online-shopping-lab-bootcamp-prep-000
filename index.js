@@ -60,7 +60,7 @@ function total() {
 
 function removeFromCart(item) {
   var n = 0
-  if(item === )
+  if(cart[])
 }
 
 function placeOrder(cardNumber) {
