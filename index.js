@@ -70,7 +70,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber){
-if (typeof cardNumber ){
+if (typeof cardNumber !== 'undefined'){
   
 }
 `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
