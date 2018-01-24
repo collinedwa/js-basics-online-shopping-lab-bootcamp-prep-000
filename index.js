@@ -48,6 +48,7 @@ function viewCart() {
      phrase += `${ob(cN)} at $${cN[ob(cN)]}`
     }
   }
+  return console.log(phrase)
 }
 
 function total() {
