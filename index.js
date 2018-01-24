@@ -44,7 +44,7 @@ function viewCart() {
      else{
        phrase2 = ""
      }
-     phrase += `${ob(cart[n])} at $${cart[n][ob(cart[n])]}` + phrase2 + `${n === cL - 1 ? "." : ""}`
+     phrase += `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}` + text + `${i === cart.length - 1 ? '.' : ''}`
     }
   }
   return console.log(phrase)
