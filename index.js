@@ -39,10 +39,10 @@ function viewCart() {
        phrase2 = ", and " 
      }
      else if(n === cL - 1){
-       phrase2 = ", "
+       phrase2 = ""
      }
      else{
-       phrase2 = ""
+       phrase2 = ", "
      }
      phrase += `${ob(cart[n])} at $${cart[n][ob(cart[n])]}` + phrase2 + `${n === cL - 1 ? '.' : ''}`
     }
