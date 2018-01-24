@@ -45,7 +45,7 @@ function viewCart() {
      else{
        phrase2 = ""
      }
-     phrase += `${cart
+     phrase += `${cart}`
     }
   }
 }
