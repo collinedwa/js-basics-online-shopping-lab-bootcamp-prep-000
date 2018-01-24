@@ -28,7 +28,7 @@ function viewCart() {
   }
   
   else if(cart.length === 1){
-    phrase += `${c0} at $${c1[ob(c0)]}.`
+    phrase += `${ob(c0)} at $${c1[ob(c0)]}.`
   }
   else if(cart.length === 2){
     phrase += `${ob(c0)} at $${c0[ob(c0)]} and ${ob(c1)} at $${c1[ob(c1)]}.`
@@ -45,7 +45,7 @@ function viewCart() {
      else{
        phrase2 = ""
      }
-     phrase += `${cart}`
+     phrase += `${ob(cN)}`
     }
   }
 }
