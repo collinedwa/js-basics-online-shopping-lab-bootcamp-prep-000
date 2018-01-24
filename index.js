@@ -69,6 +69,6 @@ function removeFromCart(item) {
   return cart
 }
 
-function placeOrder(cardNumber) {
+function placeOrder(cardNumber){
 
 }
