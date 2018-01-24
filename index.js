@@ -28,25 +28,25 @@ function viewCart() {
     return console.log("Your shopping cart is empty.")
   }
   
-  else if(cart.length === 1){
+  else if(cL === 1){
     phrase += `${ob(c0)} at $${c1[ob(c0)]}.`
   }
-  else if(cart.length === 2){
+  else if(cL === 2){
     phrase += `${ob(c0)} at $${c0[ob(c0)]} and ${ob(c1)} at $${c1[ob(c1)]}.`
   }
   else{
-    for(var n = 0; n < cart.length; n++){
+    for(var n = 0; n < cL; n++){
       var cN = cart[n]
-     if(n === cart.length - 2){
+     if(n === cL - 2){
        phrase2 = ", and " 
      }
-     else if(n === cart.length - 1){
+     else if(n === cL - 1){
        phrase2 = ", "
      }
      else{
        phrase2 = ""
      }
-     phrase += `${ob(cN)} at $${cN[ob(cN)]}` + phrase2 + `${n === cart.length - 1}`
+     phrase += `${ob(cN)} at $${cN[ob(cN)]}` + phrase2 + `${n === cL - 1}`
     }
   }
   return console.log(phrase)
