@@ -60,7 +60,7 @@ function total() {
 
 function removeFromCart(item) {
   for(var n = 0; n < cart.length; n++){
-   if({
+   if(cart.hasOwnProperty({
   }
 }
 
