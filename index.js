@@ -20,6 +20,7 @@ function viewCart() {
   var ob = Object.keys
   var c0 = cart[0]
   var c1 = cart[1]
+  var cL = cart.length
   
   // single + double cart
   
@@ -45,7 +46,7 @@ function viewCart() {
      else{
        phrase2 = ""
      }
-     phrase += `${ob(cN)} at $${cN[ob(cN)]}` + phrase2 + `${}`
+     phrase += `${ob(cN)} at $${cN[ob(cN)]}` + phrase2 + `${n === cart.length - 1}`
     }
   }
   return console.log(phrase)
