@@ -45,7 +45,7 @@ function viewCart() {
      else{
        phrase2 = ""
      }
-     phrase += `${ob(cN)} at $${cN[ob(cN)]}`
+     phrase += `${ob(cN)} at $${cN[ob(cN)]} `
     }
   }
   return console.log(phrase)
