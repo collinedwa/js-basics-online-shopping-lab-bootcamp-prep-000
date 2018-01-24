@@ -29,7 +29,7 @@ function viewCart() {
   }
   
   else if(cL === 1){
-    phrase += `${ob(c0)} at $${c1[ob(c0)]}.`
+    phrase += `${ob(cart[0])} at $${cart[0][ob(cart[0])]}.`
   }
   else if(cL === 2){
     phrase += `${ob(c0)} at $${c0[ob(c0)]} and ${ob(c1)} at $${c1[ob(c1)]}.`
