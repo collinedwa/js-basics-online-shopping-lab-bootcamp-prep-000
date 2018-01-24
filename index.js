@@ -28,13 +28,14 @@ function viewCart() {
   }
   
   else if(cart.length === 1){
-    phrase += `${cart[0]} at $${cart[0][ob(cart[0])]}.`
+    phrase += `${c0} at $${c1[ob(c0)]}.`
   }
   else if(cart.length === 2){
-    phrase += `${ob(cart[0])} at $${cart[0][ob(cart[0])]} and ${ob(cart[1])} at $${cart[1][ob(cart[1])]}.`
+    phrase += `${ob(c0)} at $${c0[ob(c0)]} and ${ob(c1)} at $${c1[ob(c1)]}.`
   }
   else{
     for(var n = 0; n < cart.length; n++){
+      var cN = cart[n]
      if(n === cart.length - 2){
        phrase2 = ", and " 
      }
