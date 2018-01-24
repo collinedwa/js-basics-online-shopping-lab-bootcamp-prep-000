@@ -34,6 +34,7 @@ function viewCart() {
   }
   else{
     for(var n = 0; n < cL; n++){
+      var phrase2
      if(n === cL - 2){
        phrase2 = ", and " 
      }
