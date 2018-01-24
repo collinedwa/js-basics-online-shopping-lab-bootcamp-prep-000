@@ -18,6 +18,8 @@ return cart
 function viewCart() {
   var phrase = "In your cart, you have "
   var ob = Object.keys
+  var c0 = cart[0]
+  var c1 = cart[1]
   
   // single + double cart
   
@@ -26,10 +28,10 @@ function viewCart() {
   }
   
   else if(cart.length === 1){
-    phrase += `${cart[0]} at $${cart[0][ob(cart[0])]}.` )
+    phrase += `${cart[0]} at $${cart[0][ob(cart[0])]}.`
   }
   else if(cart.length === 2){
-    phrase += `${ob(cart[0])} at $${cart[0][ob(cart[0])]} and ${ob(cart[1])} at $${cart[1][ob(cart[1])]}.` )
+    phrase += `${ob(cart[0])} at $${cart[0][ob(cart[0])]} and ${ob(cart[1])} at $${cart[1][ob(cart[1])]}.`
   }
   else{
     for(var n = 0; n < cart.length; n++){
@@ -42,6 +44,7 @@ function viewCart() {
      else{
        phrase2 = ""
      }
+     phrase += `${cart
     }
   }
 }
