@@ -24,7 +24,7 @@ function viewCart() {
   
   // single + double cart
   
-  if(cart.length === 0){
+  if(cL === 0){
     return console.log("Your shopping cart is empty.")
   }
   
